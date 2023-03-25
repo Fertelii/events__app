@@ -1,12 +1,27 @@
+import Image from "next/image"
 import Link from "next/link"
 
 
 export const Header = () => (
     <header>
-        <nav>
-            <Link href='/' passHref>Home</Link>
-            <Link href='/events' passHref>Events</Link>
-            <Link href='/about-us' passHref>About us</Link>
-        </nav>
+        <div>
+            <div className="topNav">
+                <Image alt="logo" src={'/images/logo_black.png'} width={50} height={50} />
+                <nav>
+                    <ul>
+                        <li>
+                            <Link href='/' passHref>Home</Link>
+                        </li>
+                        <li>
+                            <Link href='/events' passHref>Events</Link>
+                        </li>
+                        <li>
+                            <Link href='/about-us' passHref>About us</Link>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <h1>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h1>
+        </div>
     </header>
 )
