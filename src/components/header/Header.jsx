@@ -21,7 +21,7 @@ export const Header = () => (
                     </ul>
                 </nav>
             </div>
-            <h1>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h1>
+            <h1 className="title">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h1>
         </div>
     </header>
 )
